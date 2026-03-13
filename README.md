@@ -47,13 +47,23 @@ Apache Spark (Glue)
 Jupyter Notebook  
 Git / GitHub
 
-
 ## Analysis
 This platform allows analysts to explore questions such as:
-- Which areas of Nashville experience the highest crime frequency?
 - How does crime vary by time of day?
-- Which offense types are increasing year over year?
+  <img width="1206" height="559" alt="image" src="https://github.com/user-attachments/assets/c75f244d-7937-4447-9bca-8228cf0e11cb" />
 - Are there seasonal patterns in crime activity?
+  <img width="1128" height="558" alt="image" src="https://github.com/user-attachments/assets/e5991011-fc32-4e7c-a795-0dd41285ad65" />
+
+## Key Findings
+- Crime activity increases during evening hours
+- Crime incidents occur more frequently on weekends
+- 911 call volume was a statistically significant predictor of crime incidents
+
+## Implications
+-  911 call activity can act as an indicator of crime trends
+- Monitoring service demand may help agencies identify emerging crime patterns
+- Data can support data-driven policing and resource allocation
+- Data platforms can improve situational awareness for public safety agencies
 
 ## Future Improvements
 - Automate ingestion with scheduled workflows
@@ -61,7 +71,6 @@ This platform allows analysts to explore questions such as:
 - Integrate real-time crime feeds
 - Develop dashboards for visualization
 - Expand the platform to support predictive analytics
-
 
 
 
