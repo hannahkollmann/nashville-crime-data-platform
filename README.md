@@ -58,6 +58,21 @@ Apache Spark (Glue)
 Jupyter Notebook  
 Git / GitHub
 
+## Data Model
+The curated data layer follows a dimensional star schema design.
+
+Fact Tables
+- fact_incidents
+- fact_calls_for_service
+
+Dimension Tables
+- dim_date
+- dim_time
+- dim_location
+- dim_offense
+- dim_call_type
+- dim_call_disposition
+
 ## Analysis
 This platform allows analysts to explore questions such as:
 - How does crime vary by time of day?
