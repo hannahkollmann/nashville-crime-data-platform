@@ -27,15 +27,26 @@ Example datasets used:
 The platform follows a modern data pipeline architecture:
 
 ```
-Raw Public Data
-      ↓
-Python Data Ingestion
-      ↓
-AWS S3 Storage
-      ↓
-Amazon Redshift Warehouse
-      ↓
-SQL Analytics Layer
+Data Source
+    Nashville Open Data Portal
+            ↓
+Raw Data Layer
+    AWS S3 Raw Data
+            ↓
+Processing Layer
+    AWS Glue ETL Jobs (Apache Spark)
+            ↓
+Curated Data Layer
+    AWS S3 Curated Data
+            ↓
+Metadata Layer
+    AWS Glue Data Catalog
+            ↓
+Query Layer
+    Amazon Athena SQL
+            ↓
+Analytics Layer
+    Data Analysis & Visualization
 ```
 ## Technology Used
 Python  
