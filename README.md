@@ -12,13 +12,16 @@ The pipeline performs the following steps:
 5. Load data into a SQL analytics environment
 6. Run analytical queries to identify crime trends
 
+## Business Problem 
+Public crime datasets are often published as raw files that are difficult to analyze at scale. Analysts must manually clean and structure this data before meaningful insights can be generated. This project builds a structured data pipeline that transforms raw Nashville crime datasets into a centralized analytics platform capable of supporting trend analysis, reporting, and future machine learning applications.
+
 ## Data Sources
-Metro Nashville Police Department (MNPD) Open Data Portal
+Full datasets are available through the Nashville Open Data Portal.
 
 Example datasets used:
-- MNPD Crime Incidents
-- 911 Calls for Service
-- Police dispatch activity
+- Metro Nashville Police Deptartment Crime Incidents (https://data.nashville.gov/datasets/Nashville::metro-nashville-police-department-incidents/about)
+- 911 Calls for Service (https://data.nashville.gov/datasets/Nashville::metro-nashville-police-department-calls-for-service-2025/about)
+- Police dispatch activity (https://datanashvillegov-nashville.hub.arcgis.com/datasets/e8eface241d34e5c8ff1fd4c28ebd93e_0/explore)
 
 ## Architecture 
 The platform follows a modern data pipeline architecture:
@@ -34,6 +37,33 @@ Amazon Redshift Warehouse
       ↓
 SQL Analytics Layer
 ```
+## Technology Used
+Python  
+AWS Glue  
+AWS S3  
+Amazon Redshift  
+SQL  
+Apache Spark (Glue)  
+Jupyter Notebook  
+Git / GitHub
+
+
+## Analysis
+This platform allows analysts to explore questions such as:
+- Which areas of Nashville experience the highest crime frequency?
+- How does crime vary by time of day?
+- Which offense types are increasing year over year?
+- Are there seasonal patterns in crime activity?
+
+## Future Improvements
+- Automate ingestion with scheduled workflows
+- Add data quality validation checks
+- Integrate real-time crime feeds
+- Develop dashboards for visualization
+- Expand the platform to support predictive analytics
+
+
+
 
 
 
